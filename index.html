@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Crime Data Scrollytelling</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Scrollama -->
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>LA Crime Data</h1>
+            <p class="subtitle">A Visual Journey from 2020 to Present</p>
+            <p class="scroll-hint">Scroll to Explore ↓</p>
+        </div>
+    </header>
+
+    <main id="scrolly">
+
+        <article>
+            <div class="step" data-step="1">
+                <h2>Crime Trends Over Time</h2>
+                <p>Since 2020, Los Angeles has seen fluctuating crime rates. The data reveals seasonal patterns and
+                    significant shifts during specific periods.</p>
+            </div>
+            <div class="step" data-step="2">
+                <h2>Most Common Crimes</h2>
+                <p>Vehicle theft and simple assault are consistently among the most frequent incidents, overshadowing
+                    other types of crime.</p>
+            </div>
+            <div class="step" data-step="3">
+                <h2>Geographic Hotspots</h2>
+                <p>Crime is not evenly distributed. Certain neighborhoods experience higher densities of reported
+                    incidents.</p>
+            </div>
+            <div class="step" data-step="4">
+                <h2>Area Breakdown</h2>
+                <p>The '77th Street' and 'Central' areas often report high activity. Here is the breakdown of the top 5
+                    areas.</p>
+            </div>
+            <div class="step" data-step="5">
+                <h2>Explore the Data</h2>
+                <p>Thank you for exploring this visualization.</p>
+            </div>
+        </article>
+
+        <figure id="sticky-viz">
+            <div id="viz-container"></div>
+            <div id="map-container"></div>
+        </figure>
+
+    </main>
+
+    <footer>
+        <p>Created with AI Assistance | Data: LA Open Data Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
